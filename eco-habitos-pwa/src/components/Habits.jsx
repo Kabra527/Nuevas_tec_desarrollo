@@ -6,7 +6,7 @@ export default function Habits() {
   const usuario = localStorage.getItem("usuario") || "anonimo";
 
   useEffect(() => {
-    fetch(`http://127.0.0.1:5000/puntos/${usuario}`)
+    fetch(`https://eco-backend-ijn9.onrender.com/puntos/${usuario}`)
       .then((res) => res.json())
       .then((data) => setPuntos(data.puntos))
       .catch(() => console.log("Sin conexión al servidor"));
@@ -16,7 +16,7 @@ export default function Habits() {
     const nuevosPuntos = 10;
 
     try {
-      await fetch("http://127.0.0.1:5000/puntos", {
+      await fetch("https://eco-backend-ijn9.onrender.com/puntos", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({ username: usuario, puntos: nuevosPuntos })
