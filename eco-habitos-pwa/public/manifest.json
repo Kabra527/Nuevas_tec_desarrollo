@@ -1,0 +1,27 @@
+{
+  "short_name": "EcoHábitos",
+  "name": "EcoHábitos - Cuida el planeta",
+  "description": "App para registrar hábitos ecológicos y ganar puntos",
+  "icons": [
+    {
+      "src": "favicon.ico",
+      "sizes": "64x64",
+      "type": "image/x-icon"
+    },
+    {
+      "src": "logo192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "logo512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#22c55e",
+  "background_color": "#ffffff",
+  "orientation": "portrait"
+}
