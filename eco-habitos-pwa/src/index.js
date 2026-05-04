@@ -3,6 +3,9 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 
+// Despertar el backend
+fetch("https://eco-backend-ijn9.onrender.com/puntos/admin").catch(() => {});
+
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
@@ -10,7 +13,6 @@ root.render(
   </React.StrictMode>
 );
 
-// Registrar Service Worker
 if ('serviceWorker' in navigator) {
   window.addEventListener('load', () => {
     navigator.serviceWorker
